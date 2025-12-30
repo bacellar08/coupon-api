@@ -1,5 +1,6 @@
 package com.bacellar08.teste_cupom.exception;
 
+import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import jakarta.validation.constraints.NotNull;
 import java.time.ZonedDateTime;
 import lombok.AllArgsConstructor;
@@ -11,6 +12,12 @@ import lombok.Setter;
 import lombok.ToString;
 import org.springframework.http.HttpStatus;
 
+@JsonPropertyOrder({
+		"code",
+		"title",
+		"detail",
+		"requestDateTime"
+})
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder

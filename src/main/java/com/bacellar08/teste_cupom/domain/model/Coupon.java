@@ -67,7 +67,7 @@ public class Coupon {
 	}
 
 	@PrePersist
-	private void generateId() {
+	void generateId() {
 		if (this.id == null) {
 			this.id = newId();
 		}
