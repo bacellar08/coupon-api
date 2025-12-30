@@ -18,11 +18,11 @@ public class BusinessException extends RuntimeException {
 	}
 
 	private HttpStatus loadDefaultStatusCode() {
-		return HttpStatus.BAD_REQUEST;
+		return HttpStatus.UNPROCESSABLE_CONTENT;
 	}
 
 	private HttpStatusCode loadDefaultStatusCode(HttpStatusCode statusCode) {
-		return statusCode != null ? statusCode : HttpStatus.BAD_REQUEST;
+		return statusCode != null ? statusCode : HttpStatus.UNPROCESSABLE_CONTENT;
 	}
 
 	public BusinessException(MessageException message) {
@@ -43,16 +43,6 @@ public class BusinessException extends RuntimeException {
 
 	public BusinessException(String message) {
 		super(message);
-		this.httpStatusCode = loadDefaultStatusCode();
-	}
-
-	public BusinessException(String message, Throwable cause) {
-		super(message, cause);
-		this.httpStatusCode = loadDefaultStatusCode();
-	}
-
-	public BusinessException(Throwable cause) {
-		super(cause);
 		this.httpStatusCode = loadDefaultStatusCode();
 	}
 

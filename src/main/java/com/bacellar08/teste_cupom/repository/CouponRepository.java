@@ -1,6 +1,6 @@
 package com.bacellar08.teste_cupom.repository;
 
-import com.bacellar08.teste_cupom.domain.Coupon;
+import com.bacellar08.teste_cupom.domain.model.Coupon;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

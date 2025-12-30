@@ -1,9 +1,9 @@
 package com.bacellar08.teste_cupom.domain.factory;
 
-import com.bacellar08.teste_cupom.domain.Coupon;
-import com.bacellar08.teste_cupom.domain.CouponCode;
-import com.bacellar08.teste_cupom.domain.Discount;
-import com.bacellar08.teste_cupom.domain.StatusEnum;
+import com.bacellar08.teste_cupom.domain.model.Coupon;
+import com.bacellar08.teste_cupom.domain.model.CouponCode;
+import com.bacellar08.teste_cupom.domain.model.Discount;
+import com.bacellar08.teste_cupom.domain.model.StatusEnum;
 import com.bacellar08.teste_cupom.exception.BusinessException;
 import com.bacellar08.teste_cupom.exception.MessageException;
 import java.math.BigDecimal;

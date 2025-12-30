@@ -1,4 +1,4 @@
-package com.bacellar08.teste_cupom.domain;
+package com.bacellar08.teste_cupom.domain.model;
 
 import com.bacellar08.teste_cupom.exception.BusinessException;
 import com.bacellar08.teste_cupom.exception.MessageException;

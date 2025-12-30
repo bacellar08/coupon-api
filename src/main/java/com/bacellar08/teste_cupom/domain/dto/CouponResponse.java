@@ -1,9 +1,8 @@
 package com.bacellar08.teste_cupom.domain.dto;
 
-import com.bacellar08.teste_cupom.domain.Coupon;
+import com.bacellar08.teste_cupom.domain.model.Coupon;
 import java.math.BigDecimal;
 import java.time.Instant;
-import java.time.LocalDate;
 
 public record CouponResponse(
 		String id,
