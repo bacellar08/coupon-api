@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: teste-cupom
+
+  datasource:
+    url: jdbc:h2:mem:coupondb
+    driver-class-name: org.h2.Driver
+    username: sa
+    password:
+  h2:
+    console:
+      enabled: true
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+
